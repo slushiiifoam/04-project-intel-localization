@@ -288,3 +288,44 @@ section h2 i {
 .carousel-item {
   padding: 40px 0; /* Add vertical padding to carousel slides */
 }
+
+/* Make carousel indicators more visible, even when inactive */
+.carousel-indicators button {
+  background-color: #b3d4ee; /* Light blue for inactive indicators */
+  border: 2px solid #0068b5; /* Intel blue border for all indicators */
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  opacity: 1;
+  margin: 0 6px;
+  transition: background 0.3s, border 0.3s;
+}
+
+/* Highlight the active indicator */
+.carousel-indicators .active {
+  background-color: #00aee6; /* Lighter blue for active */
+  border: 2px solid #0068b5;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* Make carousel controls (arrows) visible and blue with good contrast */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0068b5; /* Intel blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 60% 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Add a white border for extra contrast */
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Optional: increase the clickable area for easier navigation */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 7%;
+  min-width: 48px;
+}
